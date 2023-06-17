@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<br>
+<div class="card" style="width: 18rem;">
+      
+    <img src={% block imgname %}"https://photosfile.com/wp-content/uploads/2022/09/Avneet-Kaur-Photos-4.jpeg"{% endblock imgname %} class="card-img-top" alt="...">
+    
+    <div class="card-body">
+      {% block cardtitle %}  
+      <h5 class="card-title">Home Delivery</h5>
+      {% endblock cardtitle %}
+      <br>
+      <p class="card-text">We currently are having 21+ orders to be delivered home. we will need atleast 20 + mins to deliver.</p>
+      <a href="#" class="btn btn-primary">Enter Address </a>
+    </div>
+  </div>
+
+{% endblock body %}
